@@ -1,0 +1,7 @@
+[Unit]
+Description=Load wifi module for pyramid
+After=vendor-firmware-misc.mount vendor-firmware-adsp.mount
+
+[Service]
+Type=oneshot
+Exec=/sbin/modprobe bcmdhd
