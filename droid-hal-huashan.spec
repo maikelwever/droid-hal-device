@@ -6,7 +6,7 @@
 
 
 %define android_config \
-#define QCOM_HARDWARE 1\
+#define QCOM_BSP 1\
 %{nil}
 
 
