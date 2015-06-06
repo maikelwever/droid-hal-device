@@ -1,10 +1,10 @@
 [Unit]
 Description=Load wifi module for pyramid
-After=vendor-firmware-misc.mount vendor-firmware-adsp.mount
+After=vendor-firmware-misc.mount vendor-firmware-adsp.mount connman.service
 
 [Service]
 Type=oneshot
 Exec=/sbin/modprobe bcmdhd
 
 [Install]
-WantedBy=basic.target
+WantedBy=user@100000.service
