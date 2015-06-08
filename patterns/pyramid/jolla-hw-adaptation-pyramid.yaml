@@ -25,8 +25,17 @@ Requires:
 #- gstreamer0.10-droideglsink
 #- nemo-qtmultimedia-plugins-gstvideotexturebackend
 
+# This is for audio/video support
+- gstreamer1.0
+- gstreamer1.0-plugins-good
+- gstreamer1.0-plugins-base
+- gstreamer1.0-plugins-bad
+
+- nemo-gstreamer1.0-interfaces
+- gstreamer1.0-droid
+
 # This will do good after sensors start to work:
-#- mce-plugin-libhybris
+- mce-plugin-libhybris
 
 ## USB mode controller
 # Enables mode selector upon plugging USB cable:
