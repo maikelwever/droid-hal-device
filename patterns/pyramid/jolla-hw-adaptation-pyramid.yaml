@@ -26,13 +26,14 @@ Requires:
 #- nemo-qtmultimedia-plugins-gstvideotexturebackend
 
 # This is for audio/video support
-- gstreamer1.0
-- gstreamer1.0-plugins-good
-- gstreamer1.0-plugins-base
-- gstreamer1.0-plugins-bad
+# This is all broken btw.
+#- gstreamer1.0
+#- gstreamer1.0-plugins-good
+#- gstreamer1.0-plugins-base
+#- gstreamer1.0-plugins-bad
 
-- nemo-gstreamer1.0-interfaces
-- gstreamer1.0-droid
+#- nemo-gstreamer1.0-interfaces
+#- gstreamer1.0-droid
 
 # This will do good after sensors start to work:
 - mce-plugin-libhybris
