@@ -5,9 +5,4 @@
 %define device_pretty Xperia SP (C5303)
 
 
-%define android_config \
-#define QCOM_BSP 1\
-%{nil}
-
-
 %include rpm/droid-hal-device.inc
