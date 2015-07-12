@@ -26,7 +26,7 @@ Requires:
 #- nemo-qtmultimedia-plugins-gstvideotexturebackend
 
 # This will do good after sensors start to work:
-#- mce-plugin-libhybris
+- mce-plugin-libhybris
 
 ## USB mode controller
 # Enables mode selector upon plugging USB cable:
@@ -52,5 +52,6 @@ Requires:
 # hammerhead, grouper, and maguro use this in scripts, so include for all
 - rfkill
 
-Summary: Jolla HW Adaptation huashan
+- jolla-devicelock-plugin-encsfa
 
+Summary: Jolla HW Adaptation huashan
