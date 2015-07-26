@@ -294,7 +294,7 @@ FSTAB_FILES="$(echo %{android_root}/out/target/product/%{device}/root/fstab.* %{
 shopt -u nullglob
 
 chmod 755 %{SOURCE1}
-%{SOURCE1} --files $FSTAB_FILES  --skip auto /acct /boot /cache /data /misc /recovery /staging /storage/usbdisk /sys/fs/cgroup /sys/fs/cgroup/memory /sys/kernel/debug  /sys/kernel/config --outputdir tmp/units
+%{SOURCE1} --files $FSTAB_FILES  --skip auto /tmp /acct /boot /cache /data /misc /recovery /staging /storage/usbdisk /sys/fs/cgroup /sys/fs/cgroup/memory /sys/kernel/debug  /sys/kernel/config --outputdir tmp/units
 
 echo Fixing up mount points
 hybris/hybris-boot/fixup-mountpoints %{device} tmp/units/*
