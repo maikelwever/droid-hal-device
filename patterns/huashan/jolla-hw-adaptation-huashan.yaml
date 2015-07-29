@@ -26,7 +26,13 @@ Requires:
 #- nemo-qtmultimedia-plugins-gstvideotexturebackend
 
 # This will do good after sensors start to work:
-#- mce-plugin-libhybris
+- mce-plugin-libhybris
+
+# This is somehow also needed
+- jolla-settings-layout
+
+# Pulse stuff
+- pulseaudio-modules-droid
 
 ## USB mode controller
 # Enables mode selector upon plugging USB cable:
