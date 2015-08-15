@@ -207,6 +207,16 @@ check_header_exists bionic/libc/kernel/common/linux/sync.h && \
         bionic/libc/kernel/common/linux/sync.h \
         bionic/libc/kernel/common/linux/sw_sync.h
 
+check_header_exists bionic/libc/kernel/uapi/linux/sync.h && \
+    extract_headers_to linux \
+        bionic/libc/kernel/uapi/linux/sync.h \
+        bionic/libc/kernel/uapi/linux/sw_sync.h
+
+check_header_exists system/core/libsync/include/sync/sync.h && \
+    extract_headers_to sync \
+        system/core/libsync/include/sync/sync.h
+
+
 check_header_exists system/core/include/sync/sync.h && \
     extract_headers_to sync \
         system/core/include/sync

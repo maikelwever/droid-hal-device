@@ -611,6 +611,9 @@ fi
 # Disabling v4l.rules
 %{_sysconfdir}/udev/rules.d/60-persistent-v4l.rules
 
+/selinux_version
+/selinux_contexts
+
 %files devel
 %defattr(644,root,root,-)
 %{_libdir}/droid-devel/
